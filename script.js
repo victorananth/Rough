@@ -266,7 +266,9 @@ function drawChart(countryCode, countrylabel, color){
 	    console.log("Displaying Alert");
             return;
         }
-
+        else
+            { $('.alert').hide();
+        }
         //  clean up everything before drawing a new chart
         // d3.select("body").selectAll("svg > *").remove();
 	innerChart.selectAll("g").remove();
